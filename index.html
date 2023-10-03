@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Documentation Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header class="nav-header">Python Docs</header>
+
+      <ul class="nav-ul">
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#What_you_should_already_know"
+            >What you should already know</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Python_and_Java">Python and Java</a></li>
+        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li>
+          <a class="nav-link" href="#Declaring_Variables"
+            >Declaring Variables</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Conditional_Statements"
+            >Conditional Statements</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Loops">Loops</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header class="main-header">Introduction</header>
+
+        <p class="main-paragraph">
+          Python is a versatile, high-level programming language known for its
+          simplicity and readability. It is widely used for various applications
+          and can be integrated with other technologies.
+        </p>
+
+        <p class="main-paragraph">
+          Python includes a standard library of modules, such as os, datetime,
+          and math, and provides a core set of language elements like loops,
+          conditionals, and functions. Python can be extended for specific
+          purposes by importing additional modules or libraries:
+        </p>
+
+        <ul class="main-ul">
+          <li class="main-li">
+            Web Development: Python for web development can use frameworks like
+            Django and Flask to build web applications.
+          </li>
+          <li class="main-li">
+            Data Analysis: Python for data analysis can leverage libraries like
+            Pandas and NumPy to manipulate data efficiently.
+          </li>
+          <li class="main-li">
+            Machine Learning and AI: Python for machine learning and artificial
+            intelligence can utilize TensorFlow and PyTorch for model
+            development.
+          </li>
+        </ul>
+      </section>
+
+      <section id="What_you_should_already_know" class="main-section">
+        <header class="main-header">What You Should Already Know</header>
+        <p class="main-paragraph">
+          This guide assumes you have the following basic background:
+        </p>
+        <ul class="main-ul">
+          <li class="main-li">
+            A general understanding of programming concepts and logic.
+          </li>
+          <li class="main-li">
+            Familiarity with basic programming constructs like variables, loops,
+            and conditionals.
+          </li>
+          <li class="main-li">
+            Some experience with another programming language. If you are new to
+            programming, consider starting with introductory Python tutorials.
+          </li>
+        </ul>
+      </section>
+
+      <section id="Python_and_Java" class="main-section">
+        <header class="main-header">Python and Java</header>
+        <p class="main-paragraph">
+          Python and Java share some similarities but have fundamental
+          differences. Python is dynamically typed and does not require explicit
+          type declarations, unlike Java, which has static typing and strong
+          type checking.
+        </p>
+        <p class="main-paragraph">
+          While Python and Java share some syntax and control flow constructs,
+          Python follows its own dynamic paradigm and uses a more flexible,
+          prototype-based object model compared to Java's class-based model.
+          Python supports functions as first-class citizens and does not require
+          explicit access modifiers like Java (public, private, protected).
+        </p>
+        <p class="main-paragraph">
+          Python promotes a more free-form and concise coding style compared to
+          Java. You don't need to declare all variables, classes, or methods
+          explicitly, and Python's case sensitivity allows for more flexible
+          naming conventions.
+        </p>
+      </section>
+
+      <section id="Hello_world" class="main-section">
+        <header class="main-header">Hello World</header>
+        <p class="main-paragraph">Let's write your first Python code!</p>
+
+        <code class="code-example">
+          <pre>
+   def say_hello(your_name):
+ print("Hello, " + your_name)
+
+      say_hello("World")
+          </pre>
+        </code>
+        <p class="main-paragraph">The output of this code is Hello, World</p>
+      </section>
+
+      <section id="Variables" class="main-section">
+        <header class="main-header">Variables</header>
+        <p class="main-paragraph">
+          Variables in Python are used to store and reference values in your
+          programs. Python identifiers must start with a letter, underscore (_),
+          or dollar sign ($), followed by letters, digits (0-9), or underscores.
+        </p>
+
+        <p class="main-paragraph">
+          Python is case-sensitive, so it distinguishes between uppercase and
+          lowercase letters in variable names.
+        </p>
+      </section>
+      <section id="Declaring_Variables" class="main-section">
+        <header class="main-header">Declaring Variables</header>
+        <p class="main-paragraph">
+          In Python, you can declare variables without explicitly specifying
+          their data types. Variable names are case-sensitive, and you can
+          assign values to variables using the equal sign (=).
+        </p>
+
+        <p class="main-paragraph">
+          Here's how you can declare and initialize variables in Python:
+        </p>
+
+        <code class="code-example">
+          <pre>
+ #Integer variable
+    my_integer = 42
+
+ #Float variable
+    my_float = 3.14
+
+  #String variable
+    my_string = "Hello, Python!"
+
+  #Boolean variable
+    is_python_fun = True
+          </pre>
+        </code>
+
+        <p class="main-paragraph">
+          Python also supports multiple assignments in a single line, making it
+          convenient to assign values to multiple variables simultaneously:
+        </p>
+
+        <code class="code-example">
+          <pre>
+  x, y, z = 1, 2, 3
+          </pre>
+        </code>
+
+        <p class="main-paragraph">
+          This is helpful for when you need to declare multiple variables of the
+          same type at once.
+        </p>
+      </section>
+      <section id="Conditional_Statements" class="main-section">
+        <header class="main-header">Conditional Statements</header>
+
+        <p class="main-paragraph">
+          Conditional statements allow you to make decisions in your Python
+          programs. You can use the if, elif (short for "else if"), and else
+          keywords to control the flow of your code based on conditions.
+        </p>
+
+        <p class="main-paragraph">
+          Here's an example of an if statement in Python:
+        </p>
+
+        <code class="code-example">
+          <pre>
+  x = 10
+
+  if x > 5:
+    print("x is greater than 5")
+  elif x == 5:
+    print("x is equal to 5")
+  else:
+    print("x is less than 5")
+          </pre>
+        </code>
+
+        <p class="main-paragraph">
+          You can use logical operators such as and, or, and not to combine
+          conditions in more complex ways. Conditional statements are
+          fundamental for creating decision-making logic in your Python
+          programs.
+        </p>
+      </section>
+      <section id="Loops" class="main-section">
+        <header class="main-header">Loops</header>
+        <p class="main-paragraph">
+          Python supports various types of loops, including for loops and while
+          loops. Here's an example of a for loop that iterates through a list of
+          numbers and prints each number:
+        </p>
+        <code class="code-example">
+          <pre>
+  numbers = [1, 2, 3, 4, 5]
+
+  for num in numbers:
+       print(num)
+          </pre>
+        </code>
+        <p class="main-paragraph">
+          And here's an example of a while loop that counts from 1 to 5:
+        </p>
+        <code class="code-example">
+          <pre>
+  count = 1
+
+  while count &lt;= 5:
+          print(count)
+    count += 1
+          </pre>
+        </code>
+        <p class="main-paragraph">
+          These are just a few examples to get you started with Python. Python
+          offers a wide range of features and libraries for various programming
+          tasks, making it a powerful and versatile language.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
